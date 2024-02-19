@@ -34,7 +34,7 @@ class RufoFormatCommand(sublime_plugin.TextCommand):
     if filename != None:
       command = [rufo_cmd, "--filename", filename]
 
-    with subprocess.Popen(command, stdin = subprocess.PIPE, stdout = subprocess.PIPE) as proc:
+    with subprocess.Popen(command, stdin = subprocess.PIPE, stdout = subprocess.PIPE, shell = True) as proc:
       proc.stdin.write(bytes(src, 'UTF-8'))
       proc.stdin.close()
       output = proc.stdout.read().decode('UTF-8')
