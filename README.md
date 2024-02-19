@@ -9,7 +9,7 @@ __Note__: You need to have [Package Control](https://sublime.wbond.net/installat
 
 * Open Command Palette (Ctrl+Shift+P)
 * Select `Package Control: Add Repository`
-* Paste `https://github.com/ruby-formatter/sublime-rufo` and hit enter
+* Paste `https://github.com/SaKKo/sublime-rufo` and hit enter
 * Open Command Palette once again and select `Install Package`
 * Select `sublime-rufo`
 
